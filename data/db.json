@@ -1,5 +1,5 @@
 {
-  "nextOrderId": 1009,
+  "nextOrderId": 1010,
   "nextSettlementId": 505,
   "products": [
     {
@@ -10,7 +10,7 @@
       "unit": "bag",
       "hsn": "1006",
       "price": 640,
-      "stock": 18,
+      "stock": 16,
       "reserved": 2,
       "reorderLevel": 10
     },
@@ -22,7 +22,7 @@
       "unit": "pkt",
       "hsn": "0713",
       "price": 165,
-      "stock": 28,
+      "stock": 26,
       "reserved": 0,
       "reorderLevel": 15
     },
@@ -34,7 +34,7 @@
       "unit": "pkt",
       "hsn": "1104",
       "price": 48,
-      "stock": 35,
+      "stock": 34,
       "reserved": 0,
       "reorderLevel": 20
     },
@@ -46,7 +46,7 @@
       "unit": "btl",
       "hsn": "1512",
       "price": 190,
-      "stock": 22,
+      "stock": 21,
       "reserved": 4,
       "reorderLevel": 12
     },
@@ -58,7 +58,7 @@
       "unit": "jar",
       "hsn": "1508",
       "price": 1120,
-      "stock": 9,
+      "stock": 8,
       "reserved": 1,
       "reorderLevel": 8
     },
@@ -82,7 +82,7 @@
       "unit": "box",
       "hsn": "0405",
       "price": 260,
-      "stock": 24,
+      "stock": 23,
       "reserved": 0,
       "reorderLevel": 10
     },
@@ -247,7 +247,7 @@
       "customer": "Anil Kulkarni",
       "customerId": 2,
       "paymentMode": "upi",
-      "status": "completed",
+      "status": "cancelled",
       "items": [
         {
           "id": 1,
@@ -270,7 +270,9 @@
       "subtotal": 1020,
       "discount": 102,
       "tax": 45.9,
-      "total": 963.9
+      "total": 963.9,
+      "cancelledAt": "22/11/2026",
+      "cancelReason": "Cancelled from Order Register"
     },
     {
       "id": 1003,
@@ -449,6 +451,69 @@
       "discount": 0,
       "tax": 90,
       "total": 590
+    },
+    {
+      "id": 1009,
+      "date": "22/11/2026",
+      "customer": "Walk-in",
+      "customerId": null,
+      "paymentMode": "cash",
+      "status": "completed",
+      "items": [
+        {
+          "id": 1,
+          "sku": "GRN-001",
+          "name": "Indrayani Basmati Rice 5kg",
+          "hsn": "1006",
+          "price": 640,
+          "qty": 2
+        },
+        {
+          "id": 2,
+          "sku": "GRN-002",
+          "name": "Unpolished Toor Dal 1kg",
+          "hsn": "0713",
+          "price": 165,
+          "qty": 2
+        },
+        {
+          "id": 3,
+          "sku": "GRN-003",
+          "name": "Kolhapuri Thick Poha 500g",
+          "hsn": "1104",
+          "price": 48,
+          "qty": 1
+        },
+        {
+          "id": 4,
+          "sku": "OIL-001",
+          "name": "Cold-Pressed Sunflower Oil 1L",
+          "hsn": "1512",
+          "price": 190,
+          "qty": 1
+        },
+        {
+          "id": 5,
+          "sku": "OIL-002",
+          "name": "Cold-Pressed Groundnut Oil 5L",
+          "hsn": "1508",
+          "price": 1120,
+          "qty": 1
+        },
+        {
+          "id": 7,
+          "sku": "DRY-002",
+          "name": "Pasteurized Table Butter 500g",
+          "hsn": "0405",
+          "price": 260,
+          "qty": 1
+        }
+      ],
+      "coupon": "",
+      "subtotal": 3228,
+      "discount": 0,
+      "tax": 179.6,
+      "total": 3407.6
     }
   ],
   "settlements": [
@@ -490,6 +555,16 @@
     }
   ],
   "auditLog": [
+    {
+      "ts": "2026-11-22T17:57:41.938Z",
+      "action": "ORDER_CANCELLED",
+      "details": "Order #1002 cancelled"
+    },
+    {
+      "ts": "2026-11-22T17:57:24.865Z",
+      "action": "ORDER_CREATED",
+      "details": "Order #1009 (Walk-in) ₹3407.60"
+    },
     {
       "ts": "2022-03-15T14:22:10.000Z",
       "action": "ORDER_CREATED",
